@@ -1,4 +1,4 @@
-export const url = "http://localhost:8000/api";
+export const url = "https://shopping-app-backend-5t80.onrender.com";
 
 export const setHeaders = () => {
     const headers = {
