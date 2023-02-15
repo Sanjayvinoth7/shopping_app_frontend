@@ -35,6 +35,6 @@ export const StyledForm = styled.form`
   }
   p{
     font: 14px;
-    color:red;
+    color:grey;
   }
 `;

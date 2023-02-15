@@ -13,10 +13,10 @@ const Login = () => {
   console.log(auth);
 
   useEffect(() => {
-    if(auth._id){
-        navigate("/cart")
+    if (auth._id) {
+      navigate("/cart");
     }
-  },[auth._id, navigate]);
+  }, [auth._id, navigate]);
 
   const [user, setUser] = useState({
     email: "",
@@ -31,9 +31,9 @@ const Login = () => {
 
   return (
     <>
-      <StyledForm onSubmit={handleSubmit} >
-        <h2 >Login</h2>
-        
+      <StyledForm onSubmit={handleSubmit}>
+        <h2>Login</h2>
+
         <input
           type="email"
           placeholder="Email"
@@ -49,11 +49,10 @@ const Login = () => {
           {auth.loginStatus === "pending" ? "Submitting" : "Login"}
         </button>
 
-        {auth.loginStatus === "rejected" ? (
-          <p>{auth.loginError}</p>
-          
-        ) : null}
+        {auth.loginStatus === "rejected" ? <p>{auth.loginError}</p> : null}
 
+        <p>login : sanjayvinoth@gmail.com</p>
+        <p>password: sanjayvinoth</p>
       </StyledForm>
     </>
   );
