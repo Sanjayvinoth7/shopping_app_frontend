@@ -49,9 +49,12 @@ const Login = () => {
           {auth.loginStatus === "pending" ? "Submitting" : "Login"}
         </button>
 
-        {auth.loginStatus === "rejected" ? <p>{auth.loginError}</p> : null}
+        {/* {auth.loginStatus === "rejected" ? <p>{auth.loginError}</p> : null} */}
 
-        <p>login : sanjayvinoth@gmail.com</p>
+        
+      </StyledForm>
+      <StyledForm>
+      <p>login : sanjayvinoth@gmail.com</p>
         <p>password: sanjayvinoth</p>
       </StyledForm>
     </>

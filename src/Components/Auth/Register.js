@@ -54,11 +54,6 @@ const Register = () => {
           {auth.registerStatus === "pending" ? "Submitting" : "Register"}
         </button>
 
-        {auth.registerStatus === "rejected" ? (
-          <p>{auth.registerError
-          }</p>
-          
-        ) : null}
 
       </StyledForm>
     </>
